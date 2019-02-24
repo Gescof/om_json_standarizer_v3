@@ -18,6 +18,17 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>Sofia2</id>
+			<url>http://sofia2.org/nexus/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>maven central</id>
+			<url>http://central.maven.org/maven2/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,6 +41,7 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Azure Cosmos DB -->
 		<dependency>
 		   <groupId>com.microsoft.azure</groupId>
 		   <artifactId>azure-documentdb-spring-boot-starter</artifactId>
@@ -40,6 +52,31 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
+        
+        <!-- Sofia2 -->
+		<dependency>
+		    <groupId>com.minsait.onesait.platform</groupId>
+		    <artifactId>onesaitplatform-iotclient4springboot</artifactId>
+		    <version>1.0.0-rc26</version>
+		</dependency>
+        
+<!-- 		<dependency>
+		    <groupId>com.indra.sofia2.boot</groupId>
+		    <artifactId>sofia4boot</artifactId>
+		    <version>1.4.5</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.indra.sofia2.ssap</groupId>
+		    <artifactId>client-api</artifactId>
+		    <version>3.4.7</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.fusesource.mqtt-client</groupId>
+		    <artifactId>mqtt-client</artifactId>
+		    <version>1.14</version>
+		</dependency> -->
 		
 	</dependencies>
 

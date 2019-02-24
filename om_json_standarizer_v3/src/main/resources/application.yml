@@ -1,0 +1,21 @@
+#Spring configuration
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  #MongoDB config
+  data:
+    mongodb:
+      database: db
+      uri: mongodb://guillermo:Vly8emxhxxDhTPKoHHYvC169z0YX2IO3R0NIDggriEXLswTrLU6ttwUEwsb495NKernmoa12T5gfizOXbRawlA==@guillermo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+
+#Sofia2 config
+onesaitplatform:
+  iotclient:
+    urlRestIoTBroker: https://s4citiespro.westeurope.cloudapp.azure.com/iot-broker
+    sslverify: true
+    token: dbea2f7877ed4712824a4856a62cae88
+    deviceTemplate: ClientCitizenTicket_lmgracia
+    device: instance1
+    connectTimeoutInSec: 10
+    writeTimeoutInSec: 30
+    readTimeoutInSec: 30

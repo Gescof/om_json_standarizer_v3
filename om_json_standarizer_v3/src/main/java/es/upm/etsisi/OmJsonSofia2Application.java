@@ -27,7 +27,6 @@ public class OmJsonSofia2Application implements CommandLineRunner {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(OmJsonSofia2Application.class, args);
-		System.exit(0);
 	}
 	
 	@Override
@@ -54,6 +53,7 @@ public class OmJsonSofia2Application implements CommandLineRunner {
 				break;
 			case "0":
 				System.out.println("Fin del programa.");
+				System.exit(0);
 				break;
 			default:
 				System.out.println("Entrada no valida.");
@@ -63,8 +63,9 @@ public class OmJsonSofia2Application implements CommandLineRunner {
 	
 	/**
 	 * Muestra el menú de operaciones por consola.
+	 * @throws InterruptedException 
 	 */
-	private void mostrarMenu() {
+	private void mostrarMenu() throws InterruptedException {
 		System.out.println("\nSeleccione una opcion...");
 		System.out.println("1. Generar trazas con valores aleatorios de motas a fichero (motaMeasures.json).");
 		System.out.println("2. Alta en Azure Cosmos DB de una nueva traza de mota.");

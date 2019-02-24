@@ -27,7 +27,6 @@ public class MotaSofia2Application implements CommandLineRunner {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MotaSofia2Application.class, args);
-		System.exit(0);
 	}
 	
 	@Override
@@ -54,6 +53,7 @@ public class MotaSofia2Application implements CommandLineRunner {
 				break;
 			case "0":
 				System.out.println("Fin del programa.");
+				System.exit(0);
 				break;
 			default:
 				System.out.println("Entrada no valida.");
