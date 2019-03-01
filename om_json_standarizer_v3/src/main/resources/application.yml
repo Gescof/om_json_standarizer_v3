@@ -13,8 +13,8 @@ onesaitplatform:
   iotclient:
     urlRestIoTBroker: https://s4citiespro.westeurope.cloudapp.azure.com/iot-broker
     sslverify: true
-    token: dbea2f7877ed4712824a4856a62cae88
-    deviceTemplate: ClientCitizenTicket_lmgracia
+    token: 724fcaba296742cba85e2a92357d8d86
+    deviceTemplate: EtsisiApp
     device: instance1
     connectTimeoutInSec: 10
     writeTimeoutInSec: 30
