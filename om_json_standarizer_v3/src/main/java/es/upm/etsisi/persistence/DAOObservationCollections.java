@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
+import com.minsait.onesait.platform.client.springboot.aspect.IoTBrokerRepository;
+
 import es.upm.etsisi.entities.omjson.ObservationCollecionTraza;
 
 /**
@@ -13,7 +15,7 @@ import es.upm.etsisi.entities.omjson.ObservationCollecionTraza;
  * @version 1.0
  */
 @Repository
-//@Sofia2Repository
+@IoTBrokerRepository("OMJson")
 public interface DAOObservationCollections 
 extends MongoRepository<ObservationCollecionTraza, String> {
 	

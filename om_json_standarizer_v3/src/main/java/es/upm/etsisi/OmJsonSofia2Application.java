@@ -68,10 +68,10 @@ public class OmJsonSofia2Application implements CommandLineRunner {
 	private void mostrarMenu() throws InterruptedException {
 		System.out.println("\nSeleccione una opcion...");
 		System.out.println("1. Generar trazas con valores aleatorios de motas a fichero (motaMeasures.json).");
-		System.out.println("2. Alta en Azure Cosmos DB de una nueva traza de mota.");
-		System.out.println("3. Baja de Azure Cosmos DB de una traza de mota.");
-		System.out.println("4. Buscar una traza de mota en Azure Cosmos DB.");
-		System.out.println("5. Listar todas las trazas de motas de Azure Cosmos DB.");
+		System.out.println("2. Alta en Sofia2 de una nueva traza de mota.");
+		System.out.println("3. Baja de Sofia2 de una traza de mota.");
+		System.out.println("4. Buscar una traza de mota en Sofia2.");
+		System.out.println("5. Listar todas las trazas de motas de Sofia2.");
 		System.out.println("0. Salir.");
 	}
 	
